@@ -8,8 +8,6 @@ docker run -d --name basic -p 80:8080 nanquanyuhao/basic
 ```
 - 以下为jenkins构建临时shell脚本配置
 ```
-echo 'test project basic'
-
 cp -pr $WORKSPACE/basic $WORKSPACE/maven/
 sudo docker build -t nanquanyuhao/maven:demo $WORKSPACE/maven
 
@@ -23,7 +21,5 @@ sudo docker build -t nanquanyuhao/basic $WORKSPACE/basic
 if sudo docker ps -a | grep -i basic ; then
 	sudo docker rm -vf basic
 fi
-docker run -d --name basic -p 80:8080 nanquanyuhao/basic
-
-echo 'test project basic'
+sudo docker run -d --name basic -p 80:8080 nanquanyuhao/basic
 ```
