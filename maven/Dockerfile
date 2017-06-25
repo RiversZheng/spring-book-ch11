@@ -17,4 +17,4 @@ COPY settings.xml /opt/maven/conf/settings.xml
 
 ADD basic /basic
 RUN cd /basic && \
-mvn clean install -Dmaven.wagon.http.ssl.insecure=true -Dmaven.wagon.http.ssl.allowall=true
+    mvn clean install -Dmaven.wagon.http.ssl.insecure=true -Dmaven.wagon.http.ssl.allowall=true
