@@ -1,4 +1,4 @@
-FROM       nanquanyuhao/jdk:demo
+FROM       nanquanyuhao/jdk1.7:demo
 MAINTAINER nanquanyuhao <nanquanyuhao@foxmail.com>
 
 ENV MAVEN_VERSION 3.5.0
