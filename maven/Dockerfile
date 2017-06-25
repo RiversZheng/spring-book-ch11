@@ -15,6 +15,6 @@ RUN tar xzf /opt/apache-maven-${MAVEN_VERSION}-bin.tar.gz -C /opt && \
 
 # COPY settings.xml /opt/maven/conf/settings.xml
 
-ADD ../basic /basic
+ADD basic /basic
 RUN cd /basic && \
 mvn clean install -Dmaven.wagon.http.ssl.insecure=true -Dmaven.wagon.http.ssl.allowall=true
