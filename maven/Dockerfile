@@ -5,7 +5,7 @@ ENV MAVEN_VERSION 3.5.0
 ENV MAVEN_HOME /opt/maven
 
 # Install maven
-# RUN curl -fsSL http://mirror.cc.columbia.edu/pub/software/apache/maven/maven-3/MAVEN_VERSION/binaries/apache-maven-${MAVEN_VERSION}-bin.tar.gz
+# RUN curl -fsSL http://mirror.cc.columbia.edu/pub/software/apache/maven/maven-3/${MAVEN_VERSION}/binaries/apache-maven-${MAVEN_VERSION}-bin.tar.gz
 
 COPY apache-maven-${MAVEN_VERSION}-bin.tar.gz /opt/
 
