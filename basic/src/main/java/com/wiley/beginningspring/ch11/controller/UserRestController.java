@@ -28,6 +28,7 @@ public class UserRestController {
 
     @RequestMapping(value = "/users", method=RequestMethod.GET)
     public List<User> list() {
+        System.out.println("ceshiyixia");
         return userRepository.findAll();
     }
 
