@@ -9,6 +9,6 @@
   	<module>basicwithannotations</module>
   	<module>basicwithxml</module>
   	<module>exceptionhandling</module>
-  	<module>testing</module>
+  <!--	<module>testing</module>-->
   </modules>
 </project>
